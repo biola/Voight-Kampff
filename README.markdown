@@ -35,6 +35,6 @@ FAQ
 __Q:__ __What's with the name?__  
 __A:__ It's the [machine in Blade Runner](http://en.wikipedia.org/wiki/Blade_Runner#Voight-Kampff_machine) that is used to test whether someone is a human or a replicant.
 
-__Q:__ __By browser isn't being matched__  
+__Q:__ __My browser isn't being matched__  
 __A:__ The list is being pulled from [user-agents.org](http://www.user-agents.org).
 If you'd  like to have entries added to the list please [create a new issue](https://github.com/adamcrown/Voight-Kampff/issues/new) or send me a [pull request](https://github.com/adamcrown/Voight-Kampff/pulls). And if you know of a better source for this sort of data, please [let me know](mailto:adam@obledesign.com).
