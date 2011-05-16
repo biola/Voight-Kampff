@@ -7,6 +7,7 @@ module VoightKampff
   class << self
 
     def root
+      require 'pathname'
       Pathname.new File.expand_path '..', File.dirname(__FILE__)
     end
 
