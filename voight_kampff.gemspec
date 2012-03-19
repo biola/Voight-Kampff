@@ -12,6 +12,6 @@ spec = Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.author = "Adam Crownoble"
   s.email = "adam@obledesign.com"
-  s.homepage = "https://github.com/adamcrown/Voight-Kampff"
+  s.homepage = "https://github.com/biola/Voight-Kampff"
   s.add_dependency('httpclient', '>2.1.0')
 end
