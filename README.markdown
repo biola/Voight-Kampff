@@ -37,4 +37,4 @@ __A:__ It's the [machine in Blade Runner](http://en.wikipedia.org/wiki/Blade_Run
 
 __Q:__ __My browser isn't being matched__  
 __A:__ The list is being pulled from [user-agents.org](http://www.user-agents.org).
-If you'd  like to have entries added to the list please [create a new issue](https://github.com/adamcrown/Voight-Kampff/issues/new) or send me a [pull request](https://github.com/adamcrown/Voight-Kampff/pulls). And if you know of a better source for this sort of data, please [let me know](mailto:adam@obledesign.com).
+If you'd  like to have entries added to the list please [create a new issue](https://github.com/biola/Voight-Kampff/issues/new) or send me a [pull request](https://github.com/biola/Voight-Kampff/pulls). And if you know of a better source for this sort of data, please [let me know](mailto:adam@obledesign.com).
