@@ -17,7 +17,7 @@ module VoightKampff
         if agent['string_match'] == 'regex'
           @user_agent_string =~ Regexp.new(agent['string'], Regexp::IGNORECASE)
         else
-          @user_agent_string.casecmp(agent['string']) == 0
+          @user_agent_string.casecmp(agent['string'].to_s) == 0
         end
       end || {}
     end
