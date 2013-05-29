@@ -14,4 +14,5 @@ spec = Gem::Specification.new do |s|
   s.email = "adam@obledesign.com"
   s.homepage = "https://github.com/biola/Voight-Kampff"
   s.add_dependency('httpclient', '>2.1.0')
+  s.add_dependency('nokogiri')
 end
