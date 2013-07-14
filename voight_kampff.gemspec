@@ -24,6 +24,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'httpclient', '~> 2.2'
   s.add_dependency 'nokogiri'
   s.add_development_dependency 'minitest', '~> 4.7'
-  s.add_development_dependency 'minitest-rails', '~> 0.9.2'
   s.add_development_dependency 'rdoc', '>= 2.4.2'
 end

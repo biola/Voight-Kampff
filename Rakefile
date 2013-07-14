@@ -1,4 +1,4 @@
-require 'bundler/setup'
+#require 'bundler/setup'
 require 'rake/testtask'
 
 _PATTERN_ = 'tests/spec/**/*_spec.rb'
@@ -17,3 +17,4 @@ Rake::TestTask.new do |t|
   t.test_files  = FileList[_PATTERN_]
   t.verbose     = false
 end
+
