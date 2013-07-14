@@ -2,7 +2,7 @@ Voight-Kampff
 =============
 [![Build Status](https://travis-ci.org/nbit001/voight-kampff.png?branch=master)](https://travis-ci.org/nbit001/voight-kampff)
 
-Voight-Kampff is a Ruby gem to assist in [user agent](http://en.wikipedia.org/wiki/User_agent) detection. Voight-Kampf can easily tell you if a request is coming from a crawler, spider or bot. This can be especially helpful in analytics such as page hit tracking.
+Voight-Kampff relies on [user agent](http://en.wikipedia.org/wiki/User_agent) list for its detection. It can easily tell you if a request is coming from a crawler, spider or bot. This can be especially helpful in analytics such as page hit tracking.
 
 Installation
 ============
@@ -40,3 +40,24 @@ __A:__ It's the [machine in Blade Runner](http://en.wikipedia.org/wiki/Blade_Run
 __Q:__ __My browser isn't being matched__  
 __A:__ The list is being pulled from [user-agents.org](http://www.user-agents.org).
 If you'd  like to have entries added to the list please [create a new issue](https://github.com/biola/Voight-Kampff/issues/new) or send me a [pull request](https://github.com/biola/Voight-Kampff/pulls). And if you know of a better source for this sort of data, please [let me know](mailto:adam@obledesign.com).
+
+CONTRIBUTING
+===========
+  PR without tests will not get merged, Make sure you write tests for api and rails app.
+  Feel free to ask for help, if you do not know how to write a determined test.
+
+RUNNING TESTS?
+=============
+
+  * bundle install
+  * rake
+  * rake test #code tests
+  * rake spec #app tests
+
+AUTOMATE TESTS? Fear not
+=======================
+  * gem install autotest-standalone
+  * autotest
+  * that's it
+  * wq
+
