@@ -3,7 +3,7 @@ PATH
   specs:
     voight_kampff (0.1.4)
       httpclient (~> 2.2)
-      nokogiri
+      nokogiri (~> 1.6.0)
 
 GEM
   remote: https://www.rubygems.org/
