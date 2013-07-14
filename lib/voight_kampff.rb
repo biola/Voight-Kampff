@@ -14,7 +14,7 @@ module VoightKampff
     def human?(user_agent_string)
       test(user_agent_string).human?
     end
-    
+
     def bot?(user_agent_string)
       test(user_agent_string).bot?
     end
@@ -27,11 +27,11 @@ module VoightKampff
     def checker?(user_agent_string)
       test(user_agent_string).checker?
     end
-    
+
     def downloader?(user_agent_string)
       test(user_agent_string).downloader?
     end
-    
+
     def proxy?(user_agent_string)
       test(user_agent_string).proxy?
     end
@@ -45,7 +45,7 @@ module VoightKampff
     end
 
     private
-    
+
     def test(user_agent_string)
       VoightKampff::Test.new(user_agent_string)
     end

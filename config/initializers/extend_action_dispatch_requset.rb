@@ -5,7 +5,7 @@ module ActionDispatch
     def human?
       voight_kampff_test.human?
     end
-    
+
     def bot?
       voight_kampff_test.bot?
     end
@@ -18,11 +18,11 @@ module ActionDispatch
     def checker?
       voight_kampff_test.checker?
     end
-    
+
     def downloader?
       voight_kampff_test.downloader?
     end
-    
+
     def proxy?
       voight_kampff_test.proxy?
     end
@@ -36,7 +36,7 @@ module ActionDispatch
     end
 
     private
-    
+
     def voight_kampff_test
       @voight_kampff ||= VoightKampff::Test.new(user_agent)
     end

@@ -1,18 +1,30 @@
-lib = File.expand_path('../lib/', __FILE__)
-$:.unshift lib unless $:.include?(lib)
-
+# -*- encoding: utf-8 -*-
+$:.unshift File.expand_path('../lib', __FILE__)
 require 'voight_kampff/version'
 
-spec = Gem::Specification.new do |s|
+Gem::Specification.new do |s|
   s.name = 'voight_kampff'
-  s.version = VoightKampff::VERSION
-  s.summary = "Voight-Kampff bot detection"
-  s.description = "Voight-Kampff is a Ruby gem that detects bots, spiders, crawlers and replicants"
-  s.files = Dir['config/*', 'config/**/*.rb', 'lib/*.rb', 'lib/**/*.rb', 'lib/tasks/*.rake']
-  s.require_path = 'lib'
-  s.author = "Adam Crownoble"
-  s.email = "adam@obledesign.com"
-  s.homepage = "https://github.com/biola/Voight-Kampff"
-  s.add_dependency('httpclient', '>2.1.0')
-  s.add_dependency('nokogiri')
+  s.summary     = "Voight-Kampff bot detection"
+  s.description = 'Voight-Kampff detects bots, spiders, crawlers and replicants'
+
+  s.licenses      = ['MIT']
+
+  s.author      = "Adam Crownoble"
+  s.email       = "adam@obledesign.com"
+  s.homepage    = "https://github.com/biola/Voight-Kampff"
+
+  # so that rubygems does not uses the actual object
+  s.version       = VoightKampff::VERSION.dup
+  s.platform      = Gem::Platform::RUBY.dup
+  s.files         = `git ls-files`.split("\n")
+  s.files.reject! { |fn| fn.match(/\.travis.yml/) }
+  s.test_files    = `git ls-files -- {tests}/**/*`.split("\n")
+  s.require_path  = 'lib'
+
+  s.add_dependency 'httpclient', '~> 2.2'
+
+  # Nokogiri 1.6.0 has dropped support for Ruby 1.8.7
+  s.add_dependency 'nokogiri', (RUBY_VERSION.match("1.8.7") ? '1.5.10' : '~> 1.6.0')
+  s.add_development_dependency 'minitest', '~> 4.7'
+  s.add_development_dependency 'rdoc', '>= 2.4.2'
 end
