@@ -14,6 +14,7 @@ GEM
     minitest (4.7.5)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    rake (10.1.0)
     rdoc (4.0.1)
       json (~> 1.4)
 
@@ -22,5 +23,6 @@ PLATFORMS
 
 DEPENDENCIES
   minitest (~> 4.7)
+  rake
   rdoc (>= 2.4.2)
   voight_kampff!
