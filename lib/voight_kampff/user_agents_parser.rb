@@ -37,7 +37,7 @@ module VoightKampff
     end
 
     private
-    
+
     def clarify_type(type)
       case type.downcase.to_sym
         when :b then 'browser'

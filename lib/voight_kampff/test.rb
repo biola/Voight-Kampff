@@ -4,7 +4,7 @@ module VoightKampff
 
     attr_accessor :user_agent_string
     attr_accessor :types
-    
+
     def initialize(user_agent_string)
       load_agents
       @user_agent_string = user_agent_string
@@ -24,7 +24,7 @@ module VoightKampff
 
     def has_type?(*types)
       return nil if agent.empty?
-      
+
       types.any? do |type|
         @types.include? type
       end
@@ -46,11 +46,11 @@ module VoightKampff
     def checker?
       has_type? :checker
     end
-    
+
     def downloader?
       has_type? :downloader
     end
-    
+
     def proxy?
       has_type? :proxy
     end
@@ -64,21 +64,21 @@ module VoightKampff
     end
 
     private
-    
+
     def load_agents
       @@agents ||= []
       if @@agents.empty?
-      
+
         base_paths = [VoightKampff.root]
         base_paths << Rails.root if defined? Rails
         rel_path = ['config', 'user_agents.yml']
-        
+
         base_paths.any? do |base_path|
           if File.exists? base_path.join(*rel_path)
             @@agents = YAML.load(File.open(base_path.join(*rel_path), 'r'))
           end
         end
-        
+
       end
     end
 
