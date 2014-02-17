@@ -1,6 +1,6 @@
 Voight-Kampff
 =============
-[![Build Status](https://travis-ci.org/nbit001/voight-kampff.png?branch=master)](https://travis-ci.org/nbit001/voight-kampff)
+[![Build Status](https://travis-ci.org/biola/Voight-Kampff.png?branch=master)](https://travis-ci.org/biola/Voight-Kampff)
 
 Voight-Kampff relies on [user agent](http://en.wikipedia.org/wiki/User_agent) list for its detection. It can easily tell you if a request is coming from a crawler, spider or bot. This can be especially helpful in analytics such as page hit tracking.
 
