@@ -7342,7 +7342,7 @@
   types: 
   - crawler
   description: Google robot
-  string: Mozilla/5.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)
+  string: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 - string_match: exact
   types: 
   - crawler
