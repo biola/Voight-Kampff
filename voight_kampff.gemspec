@@ -26,5 +26,4 @@ Gem::Specification.new do |s|
   # Nokogiri 1.6.0 has dropped support for Ruby 1.8.7
   s.add_dependency 'nokogiri', (RUBY_VERSION.match("1.8.7") ? '1.5.10' : '~> 1.6')
   s.add_development_dependency 'minitest', '~> 4.7'
-  s.add_development_dependency 'rdoc', '~> 2.4'
 end
