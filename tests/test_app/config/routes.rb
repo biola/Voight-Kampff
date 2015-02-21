@@ -1,4 +1,6 @@
 TestApp::Application.routes.draw do
+  get 'bot_test/index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,10 +1,9 @@
 require 'minitest_helper'
-require 'voight_kampff/base.rb'
+require 'advanced-bot-detection/base.rb'
 
 class Test
-  include VoightKampff
+  include AdvancedBotDetection
 end
 
-describe VoightKampff do
-
+describe AdvancedBotDetection do
 end
