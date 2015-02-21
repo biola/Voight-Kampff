@@ -1,4 +1,7 @@
 #Rubocop config to keep in line with our changes to the style guide
+Documentation:
+  Enabled: false
+
 Encoding:
   Enabled: false
 

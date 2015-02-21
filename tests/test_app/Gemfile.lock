@@ -1,7 +1,7 @@
 PATH
   remote: ../../
   specs:
-    advanced-bot-detection (0.3.0)
+    advanced_bot_detection (0.3.0)
       httpclient (~> 2.2)
       nokogiri (~> 1.6)
 
@@ -127,7 +127,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  advanced-bot-detection!
+  advanced_bot_detection!
   better_errors
   binding_of_caller
   coffee-rails (~> 3.2.1)

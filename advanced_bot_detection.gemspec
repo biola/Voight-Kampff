@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 
-require 'advanced-bot-detection/version'
+require 'advanced_bot_detection/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'advanced-bot-detection'
+  s.name        = 'advanced_bot_detection'
   s.version     = AdvancedBotDetection::VERSION
   s.platform    = Gem::Platform::RUBY
   s.author      = 'Jeffery Yeary'
