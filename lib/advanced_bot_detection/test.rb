@@ -67,7 +67,7 @@ module AdvancedBotDetection
 
     def load_agents
       Test.agents ||= []
-      return if Test.agents.empty?
+      return unless Test.agents.empty?
 
       rel_path = ['config', 'user_agents.yml']
       paths.any? do |base_path|
