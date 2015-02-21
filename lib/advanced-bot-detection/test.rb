@@ -1,7 +1,9 @@
 module AdvancedBotDetection
   class Test
+    class << self; attr_accessor :agents end
     attr_accessor :user_agent_string
     attr_accessor :types
+    @agents ||= []
 
     def initialize(user_agent_string)
       load_agents
@@ -11,7 +13,7 @@ module AdvancedBotDetection
     end
 
     def agent
-      @agent ||= @@agents.find do |agent|
+      @agent ||= Test.agents.find do |agent|
         if agent['string_match'] == 'regex'
           @user_agent_string =~ Regexp.new(agent['string'], Regexp::IGNORECASE)
         else
@@ -64,13 +66,13 @@ module AdvancedBotDetection
     private
 
     def load_agents
-      @@agents ||= []
-      if @@agents.empty?
+      Test.agents ||= []
+      if Test.agents.empty?
         rel_path = ['config', 'user_agents.yml']
 
         paths.any? do |base_path|
           if File.exist? base_path.join(*rel_path)
-            @@agents = YAML.load(File.open(base_path.join(*rel_path), 'r'))
+            Test.agents = YAML.load(File.open(base_path.join(*rel_path), 'r'))
           end
         end
 
