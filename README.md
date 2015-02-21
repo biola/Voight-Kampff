@@ -29,7 +29,7 @@ There are three ways to use ABD
 3. Through a `AdvancedBotDetection::Test` instance:
    `AdvancedBotDetection::Test.new('your user agent string').bot?`
 
-All of the above examples accept `human?`, `bot?`, `browser?`, `checker?`, `downloader?`, `proxy?`, `crawler?` and `spam?` methods. All of these methods will return `true`, `false`, or `nil` (if it doesn't recognize the user agent).
+All of the above examples accept `human?`, `bot?`,`mobile?`, `phone?`,`tablet?`, `browser?`, `checker?`, `downloader?`, `proxy?`, `crawler?` and `spam?` methods. All of these methods will return `true`, `false`, or `nil` (if it doesn't recognize the user agent).
 
 FAQ
 ===

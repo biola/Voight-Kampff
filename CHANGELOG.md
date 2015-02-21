@@ -3,6 +3,7 @@ Version History
     * All Version bumps are required to update this file as well!!
 ----
 
+* 1.0.0 Adding in mobile detection features
 * 0.3.0 Forked and renamed from Voight-Kampff gem
 * 0.2.2 Remove active_record requirment, fix google user agent
 * 0.2.1 Prefer config/user_agents.yml over defaults

@@ -32,6 +32,18 @@ module ActionDispatch
       agent_tester.spam?
     end
 
+    def mobile?
+      agent_tester.mobile?
+    end
+
+    def tablet?
+      agent_tester.tablet?
+    end
+
+    def phone?
+      agent_tester.phone?
+    end
+
     private
 
     def agent_tester
