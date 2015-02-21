@@ -1,5 +1,6 @@
 module AdvancedBotDetection
   class UserAgentsParser
+    attr_reader :types
     # To generate a new user_agents.yml file run rake advanced_bot_detection:import_user_agents
     # This class is designed to work with http://www.user-agents.org/allagents.xml
 
@@ -9,6 +10,7 @@ module AdvancedBotDetection
     def initialize(url)
       @url = url
       @xml = HTTPClient.new.get_content(url)
+      @types = { b: 'browser', c: 'checker', d: 'downloader', p: 'proxy', r: 'crawler', s: 'spam' }
     end
 
     def agents
@@ -37,14 +39,7 @@ module AdvancedBotDetection
     private
 
     def clarify_type(type)
-      case type.downcase.to_sym
-        when :b then 'browser'
-        when :c then 'checker'
-        when :d then 'downloader'
-        when :p then 'proxy'
-        when :r then 'crawler'
-        when :s then 'spam'
-      end
+      @types[type.downcase.to_sym]
     end
   end
 end

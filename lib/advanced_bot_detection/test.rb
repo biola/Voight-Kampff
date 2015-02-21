@@ -67,15 +67,13 @@ module AdvancedBotDetection
 
     def load_agents
       Test.agents ||= []
-      if Test.agents.empty?
-        rel_path = ['config', 'user_agents.yml']
+      return if Test.agents.empty?
 
-        paths.any? do |base_path|
-          if File.exist? base_path.join(*rel_path)
-            Test.agents = YAML.load(File.open(base_path.join(*rel_path), 'r'))
-          end
+      rel_path = ['config', 'user_agents.yml']
+      paths.any? do |base_path|
+        if File.exist? base_path.join(*rel_path)
+          Test.agents = YAML.load(File.open(base_path.join(*rel_path), 'r'))
         end
-
       end
     end
 
@@ -85,6 +83,5 @@ module AdvancedBotDetection
       base_paths << AdvancedBotDetection.root
       base_paths
     end
-
   end
 end
