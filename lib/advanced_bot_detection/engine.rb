@@ -1,4 +1,4 @@
-require 'advanced-bot-detection'
+require 'advanced_bot_detection'
 require 'rails'
 
 module AdvancedBotDetection

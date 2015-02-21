@@ -1,4 +1,4 @@
-namespace :'advanced-bot-detection' do
+namespace :'advanced_bot_detection' do
   desc 'Import a new uesr_agents.yml file'
   task :import_user_agents, :url do |_t, args|
     args.with_defaults url: 'http://www.user-agents.org/allagents.xml'

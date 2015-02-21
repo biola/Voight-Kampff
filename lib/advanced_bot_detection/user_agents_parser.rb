@@ -17,14 +17,18 @@ module AdvancedBotDetection
       agents = []
       xml = Nokogiri::XML(@xml)
       xml.xpath('//user-agent').each do |agent|
-        agents << {
-          'string' => agent.xpath('String').text,
-          'string_match' => 'exact', # exact or regex
-          'types' => agent.xpath('Type').text.split.map { |t| clarify_type(t) }.compact,
-          'description' => agent.xpath('Description').text
-        }
+        agents << parse_agent(agent)
       end
       agents
+    end
+
+    def parse_agent(agent)
+      {
+        'string' => agent.xpath('String').text,
+        'string_match' => 'exact', # exact or regex
+        'types' => agent.xpath('Type').text.split.map { |t| clarify_type(t) }.compact,
+        'description' => agent.xpath('Description').text
+      }
     end
 
     def to_array

@@ -1,6 +1,6 @@
-require 'advanced-bot-detection/test'
-require 'advanced-bot-detection/user_agents_parser'
-require 'advanced-bot-detection/engine' if defined?(Rails)
+require 'advanced_bot_detection/test'
+require 'advanced_bot_detection/user_agents_parser'
+require 'advanced_bot_detection/engine' if defined?(Rails)
 
 module AdvancedBotDetection
   class << self
