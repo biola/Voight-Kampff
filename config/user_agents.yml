@@ -12436,3 +12436,799 @@
 
   description: PrevX security plugin
   string: Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (.NET CLR 3.5.30729) (Prevx 3.0.5)
+#Custom additions based on weblogs
+- string: NewRelic
+  string_match: regex
+  types:
+  - checker
+  description: New Relic Ping Bot for uptime monitoring
+- string: ELB-HealthChecker
+  string_match: regex
+  types:
+  - checker
+  description: Amazon ELB health check
+- string: HubSpot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Googlebot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: MSNBOT
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Yahoo..Slurp
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Jobrapido
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: spider
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Sosospider
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Mediapartners.Google
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Baiduspider
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Python.urllib
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: MJ12bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Snuffleupagus
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: JobCrawlerBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: SightupBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Speedy.spider
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Microsoft.URL.Control
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Ask.Jeeves
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Search.Publisher
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: LinkedInBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: adsbot.google
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^Java[/]
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^Voyager[/]
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: MSRBOT
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: FAST.*Crawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Scooter
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: YahooSeeker
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: crawler.archive.org
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: grub-client
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: AdSonar.Bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: heritrix
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Gigabot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Feedfetcher.Google
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: voyager
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: www.mechanize
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: botster
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: contextad.bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: wget
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: vsyncrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: litefinder
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Keynote
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Clipta.Crawl
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ClickAJob
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: InnovantageBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: BachecaLavoroBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: TableroTrabajoBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: libwww.perl
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: searchme.com
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: SimplePie
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: JDXROBOT'
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: IEAutoDiscovery
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: OmniExplorer.Bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: PDFBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: AdsBot.Google
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Seekbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: NextGenSearchBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: OpenISearch
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: oodlebot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: AISearchBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Link.*Sleuth
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Twitturly
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: SeznamBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Pingdom
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: MSR.ISRCCrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: DotBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ShopWiki'
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: mssite
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: LucidMedia.ClickSense
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Butterfly
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Banana.Crawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^HTMLParser[/]
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^expo9
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: wikiwix.bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: gsa.crawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: RPT-HTTPClient[/]
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Trovit.bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ua-bot[/]
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: AppEngine.Google
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: twiceler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: PycURL
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Exabot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: radian6
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Twissi.Search.Bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: TweetmemeBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: TU.Dortmund.CS
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ClickTale.bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Google.Wireless.Transcoder
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: yacybot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Sogou
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Jakarta.Commons.HttpClient.3.0.1
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: YoudaoBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: linguee
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: YakazBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: TwitterJobSearch.com
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: yahoo_adcrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: LTJ.Indexing.Service
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: atraxbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: bitlybot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Jbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Twitterbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: VoilaBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: YesupBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Jobsearchbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: EntityCubeBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: MLBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: OrkashBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: agbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: NjuiceBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Onekitbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ShareThisFetcher
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ScoutJet
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Jobverifier
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: rogerbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: 80legs
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: YandexBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: discobot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: bingbot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^jcrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: JoobleBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: PaperLiBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Purebot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: GematchCrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: JobRoboter
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: CheckRobot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Stellenangebote.Jobs
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ezooms.bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: job.finder
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: netseer.crawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: bendercrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: benderthewebrobot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: trovitBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: linkchecker
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Typhoeus
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: TwitJobSearch
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: WordPress.3.0.1.+praca
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: MaxPointCrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^Ruby\s?$
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: AhrefsBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: suggybot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: libcurl
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^vcbot$
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^WordPress/[\d.]+;
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^BacklinkCrawler
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: ^NING
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: WijuBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: discoverybot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: imho-bot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: berlin-fu-cow
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: YioopBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: parsijoo
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: integromedb'
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: AddThis\.com
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: Genieo
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: JobBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: BLEXBot
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: facebookexternalhit
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
+- string: LogicMonitor
+  string_match: regex
+  types:
+  - checker
+  description: Bot detected from web log data
+- string: developers\.google\.com/\+/web/snippet/
+  string_match: regex
+  types:
+  - crawler
+  description: Bot detected from web log data
