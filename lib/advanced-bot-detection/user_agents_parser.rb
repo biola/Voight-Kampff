@@ -1,8 +1,6 @@
-module VoightKampff
-
+module AdvancedBotDetection
   class UserAgentsParser
-
-    # To generate a new user_agents.yml file run rake voight_kampff:import_user_agents
+    # To generate a new user_agents.yml file run rake advanced_bot_detection:import_user_agents
     # This class is designed to work with http://www.user-agents.org/allagents.xml
 
     require 'nokogiri'
@@ -20,7 +18,7 @@ module VoightKampff
         agents << {
           'string' => agent.xpath('String').text,
           'string_match' => 'exact', # exact or regex
-          'types' => agent.xpath('Type').text.split.map{|t| clarify_type(t) }.compact,
+          'types' => agent.xpath('Type').text.split.map { |t| clarify_type(t) }.compact,
           'description' => agent.xpath('Description').text
         }
       end
@@ -30,7 +28,7 @@ module VoightKampff
     def to_array
       agents
     end
-    alias :to_a :to_array
+    alias_method :to_a, :to_array
 
     def to_yaml
       agents.to_yaml
@@ -48,7 +46,5 @@ module VoightKampff
         when :s then 'spam'
       end
     end
-
   end
-
 end
