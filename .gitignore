@@ -1,3 +1,4 @@
+.idea
 .DS_Store
 *~
 Gemfile.lock
@@ -5,3 +6,4 @@ Gemfile.lock
 *.rbc
 coverage
 doc
+*.gem

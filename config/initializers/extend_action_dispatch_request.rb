@@ -1,46 +1,53 @@
 module ActionDispatch
-
   class Request
-
     def human?
-      voight_kampff_test.human?
+      agent_tester.human?
     end
 
     def bot?
-      voight_kampff_test.bot?
+      agent_tester.bot?
     end
-    alias :replicant? :bot?
 
     def browser?
-      voight_kampff_test.browser?
+      agent_tester.browser?
     end
 
     def checker?
-      voight_kampff_test.checker?
+      agent_tester.checker?
     end
 
     def downloader?
-      voight_kampff_test.downloader?
+      agent_tester.downloader?
     end
 
     def proxy?
-      voight_kampff_test.proxy?
+      agent_tester.proxy?
     end
 
     def crawler?
-      voight_kampff_test.crawler?
+      agent_tester.crawler?
     end
 
     def spam?
-      voight_kampff_test.spam?
+      agent_tester.spam?
+    end
+
+    def mobile?
+      agent_tester.mobile?
+    end
+
+    def tablet?
+      agent_tester.tablet?
+    end
+
+    def phone?
+      agent_tester.phone?
     end
 
     private
 
-    def voight_kampff_test
-      @voight_kampff ||= VoightKampff::Test.new(user_agent)
+    def agent_tester
+      @advanced_bot_detection ||= AdvancedBotDetection::Test.new(user_agent)
     end
-
   end
-
 end
