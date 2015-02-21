@@ -1,7 +1,5 @@
-module VoightKampff
-
+module AdvancedBotDetection
   class Test
-
     attr_accessor :user_agent_string
     attr_accessor :types
 
@@ -22,7 +20,7 @@ module VoightKampff
       end || {}
     end
 
-    def has_type?(*types)
+    def type?(*types)
       return nil if agent.empty?
 
       types.any? do |type|
@@ -31,36 +29,36 @@ module VoightKampff
     end
 
     def human?
-      has_type? :browser, :downloader, :proxy
+      type? :browser, :downloader, :proxy
     end
 
     def bot?
-      has_type? :checker, :crawler, :spam
+      type? :checker, :crawler, :spam
     end
-    alias :replicant? :bot?
+    alias_method :replicant?, :bot?
 
     def browser?
-      has_type? :browser
+      type? :browser
     end
 
     def checker?
-      has_type? :checker
+      type? :checker
     end
 
     def downloader?
-      has_type? :downloader
+      type? :downloader
     end
 
     def proxy?
-      has_type? :proxy
+      type? :proxy
     end
 
     def crawler?
-      has_type? :crawler
+      type? :crawler
     end
 
     def spam?
-      has_type? :spam
+      type? :spam
     end
 
     private
@@ -68,14 +66,10 @@ module VoightKampff
     def load_agents
       @@agents ||= []
       if @@agents.empty?
-
-        base_paths = []
-        base_paths << Rails.root if defined? Rails
-        base_paths << VoightKampff.root
         rel_path = ['config', 'user_agents.yml']
 
-        base_paths.any? do |base_path|
-          if File.exists? base_path.join(*rel_path)
+        paths.any? do |base_path|
+          if File.exist? base_path.join(*rel_path)
             @@agents = YAML.load(File.open(base_path.join(*rel_path), 'r'))
           end
         end
@@ -83,6 +77,12 @@ module VoightKampff
       end
     end
 
-  end
+    def paths
+      base_paths = []
+      base_paths << Rails.root if defined? Rails
+      base_paths << AdvancedBotDetection.root
+      base_paths
+    end
 
+  end
 end

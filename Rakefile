@@ -1,11 +1,11 @@
-#require 'bundler/setup'
+# require 'bundler/setup'
 require 'rake/testtask'
 
 _PATTERN_ = 'tests/spec/**/*_spec.rb'
 
 Bundler::GemHelper.install_tasks
 
-task :default => :test
+task default: :test
 
 ##
 # Setup rake test in order to
@@ -17,4 +17,3 @@ Rake::TestTask.new do |t|
   t.test_files  = FileList[_PATTERN_]
   t.verbose     = false
 end
-

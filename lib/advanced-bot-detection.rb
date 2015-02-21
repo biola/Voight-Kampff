@@ -1,11 +1,9 @@
-require 'voight_kampff/test'
-require 'voight_kampff/user_agents_parser'
-require 'voight_kampff/engine' if defined?(Rails)
+require 'advanced-bot-detection/test'
+require 'advanced-bot-detection/user_agents_parser'
+require 'advanced-bot-detection/engine' if defined?(Rails)
 
-module VoightKampff
-
+module AdvancedBotDetection
   class << self
-
     def root
       require 'pathname'
       Pathname.new File.expand_path '..', File.dirname(__FILE__)
@@ -18,7 +16,7 @@ module VoightKampff
     def bot?(user_agent_string)
       test(user_agent_string).bot?
     end
-    alias :replicant? :bot?
+    alias_method :replicant?, :bot?
 
     def browser?(user_agent_string)
       test(user_agent_string).browser?
@@ -47,9 +45,7 @@ module VoightKampff
     private
 
     def test(user_agent_string)
-      VoightKampff::Test.new(user_agent_string)
+      AdvancedBotDetection::Test.new(user_agent_string)
     end
-
   end
-
 end
