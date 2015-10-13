@@ -21,9 +21,5 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {tests}/**/*`.split("\n")
   s.require_path  = 'lib'
 
-  s.add_dependency 'httpclient', '~> 2.2'
-
-  # Nokogiri 1.6.0 has dropped support for Ruby 1.8.7
-  s.add_dependency 'nokogiri', (RUBY_VERSION.match("1.8.7") ? '1.5.10' : '~> 1.6')
   s.add_development_dependency 'minitest', '~> 4.7'
 end
