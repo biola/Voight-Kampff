@@ -2,12 +2,12 @@ class ReplicantsController < ActionController::Base
   def index
     header = "Replicants:\n===========\n"
 
-    content = if request.bot?
-      '- Rick Deckard'
+    status, content = if request.bot?
+      [200, '- Rick Deckard']
     else
-      'No replicants here'
+      [403, 'No replicants here']
     end
 
-    render plain: header + content
+    render plain: header + content, status: status
   end
 end
