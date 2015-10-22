@@ -13,7 +13,7 @@ Configuration
 
 A JSON file is used to match [user agent strings](http://simplyfast.info/browser) to a list of known bots.
 
-If you'd like to use an [updated list](https://github.com/monperrus/crawler-user-agents) or make your own customizations, run `rake voight_kampff:import_user_agents`. This will download a crawler-user-agents.json file into the `./config` directory.
+If you'd like to use an [updated list](https://github.com/monperrus/crawler-user-agents) or make your own customizations, run `rake voight_kampff:import_user_agents`. This will download a `crawler-user-agents.json` file into the `./config` directory.
 
 __Note:__ The pattern entries in the JSON file are evaluated as [regular expressions](http://en.wikipedia.org/wiki/Regular_expression).
 
@@ -21,7 +21,7 @@ Usage
 -----
 There are three ways to use Voight-Kampff
 
-1. In your [Ruby on Rails](http://rubyonrails.org) controllers:  
+1. Through Rack::Request such as in your [Ruby on Rails](http://rubyonrails.org) controllers:  
    `request.bot?`
 
 2. Through the `VoightKampff` module:  
@@ -31,6 +31,21 @@ There are three ways to use Voight-Kampff
    `VoightKampff::Test.new('your user agent string').bot?`
 
 All of the above examples accept `human?` and `bot?` methods. All of these methods will return `true` or `false`.
+
+Upgrading to version 1.0
+------------------------
+
+Version 1.0 uses a new source for a list of bot user agent strings since the old source was no longer maintained. This new source, unfortuately, does not include as much detail. Therefore the following methods have been deprecated:
+- `#browser?`
+- `#checker?`
+- `#downloader?`
+- `#proxy?`
+- `#crawler?`
+- `#spam?`
+
+In general the `#bot?` command tends to include all of these and I'm sure it's unlikely that anybody was getting this granular with their bot checking. So I see it as a small price to pay for an open and up to date bot list.
+
+Also, the gem no longer extends `ActionDispatch::Request` instead it extends `Rack::Request` which `ActionDispatch::Request` inherits from. This allows the same functionality for Rails while opening the gem up to other rack-based projects.
 
 FAQ
 ---
@@ -56,14 +71,5 @@ Feel free to ask for help, if you do not know how to write a determined test.
 Running Tests?
 --------------
 
-  * bundle install
-  * rake
-  * rake test #code tests
-  * rake spec #app tests
-
-Automate Tests? Fear not.
-------------------------
-  * gem install autotest-standalone
-  * autotest
-  * that's it
-  * wq
+  - `bundle install`
+  - `bundle exec rspec`
