@@ -13,7 +13,7 @@ describe Rack::Request do
     context "when user agent is #{name}" do
       let(:user_agent_string) { ua_string }
 
-      it 'is not a bot' do
+      it 'is not a replicant' do
         expect(subject.human?).to eql true
         expect(subject.bot?).to eql false
       end
@@ -23,8 +23,8 @@ describe Rack::Request do
   REPLICANTS.each do |name, ua_string|
     context "when user agent is #{name}" do
       let(:user_agent_string) { ua_string }
-      
-      it 'is a bot' do
+
+      it 'is a replicant' do
         expect(subject.bot?).to eql true
         expect(subject.human?).to eql false
       end
