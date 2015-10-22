@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require :default, :development
 
-Combustion.initialize! :all
+Combustion.initialize! :action_controller
 run Combustion::Application

@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'combustion'
 require 'voight_kampff'
 
-Combustion.initialize! :action_controller, :action_view
+Combustion.initialize! :action_controller
 
 require 'rspec/rails'
 Dir['./spec/support/**/*.rb'].each { |f| require f }
