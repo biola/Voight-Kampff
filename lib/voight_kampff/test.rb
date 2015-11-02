@@ -12,7 +12,7 @@ module VoightKampff
       load_crawlers
 
       @agent ||= @@crawlers.find do |crawler|
-        user_agent_string =~ Regexp.new(crawler['pattern'], Regexp::IGNORECASE)
+        self.user_agent_string =~ Regexp.new(crawler['pattern'], Regexp::IGNORECASE)
       end || {}
     end
 
