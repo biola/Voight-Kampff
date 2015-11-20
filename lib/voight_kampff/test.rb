@@ -42,6 +42,7 @@ module VoightKampff
       @@crawlers ||= begin
         JSON.load(File.open(preferred_path, 'r')).map do |crawler|
           crawler['regexp'] = Regexp.new(crawler['pattern'], Regexp::IGNORECASE)
+          crawler
         end
       end
     end
