@@ -9,10 +9,8 @@ module VoightKampff
     end
 
     def agent
-      load_crawlers
-
-      @agent ||= @@crawlers.find do |crawler|
-        self.user_agent_string =~ Regexp.new(crawler['pattern'], Regexp::IGNORECASE)
+      @agent ||= crawlers.find do |crawler|
+        self.user_agent_string =~ crawler['regexp']
       end || {}
     end
 
@@ -40,8 +38,12 @@ module VoightKampff
       lookup_paths.find { |path| File.exists? path }
     end
 
-    def load_crawlers
-      @@crawlers ||= JSON.load(File.open(preferred_path, 'r'))
+    def crawlers
+      @@crawlers ||= begin
+        JSON.load(File.open(preferred_path, 'r')).map do |crawler|
+          crawler['regexp'] = Regexp.new(crawler['pattern'], Regexp::IGNORECASE)
+        end
+      end
     end
   end
 end
