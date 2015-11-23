@@ -9,11 +9,7 @@ module VoightKampff
     end
 
     def agent
-      load_crawlers
-
-      @agent ||= @@crawlers.find do |crawler|
-        self.user_agent_string =~ Regexp.new(crawler['pattern'], Regexp::IGNORECASE)
-      end || {}
+      @agent ||= matching_crawler || {}
     end
 
     def human?
@@ -40,7 +36,23 @@ module VoightKampff
       lookup_paths.find { |path| File.exists? path }
     end
 
-    def load_crawlers
+    def matching_crawler
+      if match = crawler_regexp.match(@user_agent_string)
+        index = match.names.first.sub(/match/, '').to_i
+        crawlers[index]
+      end
+    end
+
+    def crawler_regexp
+      @@crawler_regexp ||= begin
+        index = -1
+        crawler_patterns = crawlers.map{|c| index += 1; "(?<match#{index}>#{c["pattern"]})" }.join("|")
+        crawler_patterns = "(#{crawler_patterns})"
+        Regexp.new(crawler_patterns, Regexp::IGNORECASE)
+      end
+    end
+
+    def crawlers
       @@crawlers ||= JSON.load(File.open(preferred_path, 'r'))
     end
   end
