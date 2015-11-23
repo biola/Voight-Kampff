@@ -25,4 +25,12 @@ describe VoightKampff::Test do
       end
     end
   end
+
+  context 'after the first run' do
+    before { VoightKampff::Test.new('anything').bot? }
+
+    it 'is fast' do
+      expect(Benchmark.realtime { 20.times { VoightKampff::Test.new('anything').bot? } }).to be < 0.001
+    end
+  end
 end
