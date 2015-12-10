@@ -45,6 +45,7 @@ module VoightKampff
 
     def crawler_regexp
       @@crawler_regexp ||= begin
+        # NOTE: This is admittedly a bit convoluted but the performance gains make it worthwhile
         index = -1
         crawler_patterns = crawlers.map{|c| index += 1; "(?<match#{index}>#{c["pattern"]})" }.join("|")
         crawler_patterns = "(#{crawler_patterns})"
