@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.licenses      = ['MIT']
 
   s.author      = "Adam Crownoble"
-  s.email       = "adam@obledesign.com"
+  s.email       = "adam@codenoble.com"
   s.homepage    = "https://github.com/biola/Voight-Kampff"
 
   # so that rubygems does not uses the actual object
