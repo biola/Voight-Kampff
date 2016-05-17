@@ -1,6 +1,8 @@
 Voight-Kampff
 =============
-[![Build Status](https://travis-ci.org/biola/Voight-Kampff.png?branch=master)](https://travis-ci.org/biola/Voight-Kampff)
+[![Build Status](https://travis-ci.org/biola/Voight-Kampff.svg?branch=master)](https://travis-ci.org/biola/Voight-Kampff)
+[![Code Climate](https://codeclimate.com/github/biola/Voight-Kampff/badges/gpa.svg)](https://codeclimate.com/github/biola/Voight-Kampff)
+[![Gem Version](https://badge.fury.io/rb/voight_kampff.svg)](https://badge.fury.io/rb/voight_kampff)
 
 Voight-Kampff relies on a [user agent](http://en.wikipedia.org/wiki/User_agent) list for its detection. It can easily tell you if a request is coming from a crawler, spider or bot. This can be especially helpful in analytics such as page hit tracking.
 
