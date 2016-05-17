@@ -1,6 +1,6 @@
 [
   {
-    "pattern": "googlebot\\/",
+    "pattern": "Googlebot\\/",
     "url": "http://www.google.com/bot.html"
   },
   {
@@ -8,6 +8,16 @@
   },
   {
     "pattern": "Googlebot-Image"
+  },
+  {
+    "pattern": "Googlebot-News"
+  },
+  {
+    "pattern": "Googlebot-Video"
+  },
+  {
+    "pattern": "AdsBot-Google",
+    "url": "https://support.google.com/webmasters/answer/1061943?hl=en"
   },
   {
     "pattern": "Mediapartners-Google",
@@ -46,6 +56,12 @@
     "pattern": "nutch"
   },
   {
+    "pattern": "Go-http-client",
+    "addition_date": "2016/03/26",
+    "url": "https://golang.org/pkg/net/http/",
+    "instances": ["Go-http-client/1.1"]
+  },
+  {
     "pattern": "phpcrawl",
     "addition_date": "2012-09/17",
     "url": "http://phpcrawl.cuab.de/"
@@ -76,8 +92,13 @@
     "pattern": "seekbot"
   },
   {
+    "pattern": "gigabot",
+    "instances": ["Gigabot/1.0", "Gigabot/2.0 (http://www.gigablast.com/spider.html)", "Gigabot/2.0 (http://www.gigablast.com/spider.html)"],
+    "url": "https://github.com/gigablast/open-source-search-engine"
+  },
+  {
     "pattern": "gigablast",
-    "instances": ["Gigabot/2.0 (http://www.gigablast.com/spider.html)", "Gigabot/2.0 (http://www.gigablast.com/spider.html)", "GigablastOpenSource/1.0"],
+    "instances": ["GigablastOpenSource/1.0"],
     "url": "https://github.com/gigablast/open-source-search-engine"
   },
   {
@@ -751,5 +772,111 @@
     "url": "http://www.screamingfrog.co.uk/seo-spider",
     "instances": ["Screaming Frog SEO Spider/5.1"],
     "addition_date": "2016/01/08"
- }
+ },
+ {
+    "pattern": "MetaURI",
+    "url": "http://www.useragentstring.com/MetaURI_id_17683.php",
+    "instances": ["MetaURI API/2.0 +metauri.com"],
+    "addition_date": "2016/01/02"
+ },
+ {
+    "pattern": "Scrapy",
+    "url": "http://scrapy.org/",
+    "instances": ["Scrapy/1.0.3 (+http://scrapy.org)"],
+    "addition_date": "2016/01/02"
+ },
+ {
+    "pattern": "LivelapBot",
+    "url": "http://site.livelap.com/crawler",
+    "instances": ["LivelapBot/0.2 (http://site.livelap.com/crawler)"],
+    "addition_date": "2016/01/02"
+ },
+ {
+    "pattern": "OpenHoseBot",
+    "url": "http://www.openhose.org/bot.html",
+    "instances": ["Mozilla/5.0 (compatible; OpenHoseBot/2.1; +http://www.openhose.org/bot.html)"],
+    "addition_date": "2016/01/02"
+ },
+ {
+    "pattern": "CapsuleChecker",
+    "url": "http://www.capsulink.com/about",
+    "instances": ["CapsuleChecker (http://www.capsulink.com/)"],
+    "addition_date": "2016/01/02"
+ },
+ {
+    "pattern": "collection@infegy.com",
+    "url": "http://infegy.com/",
+    "instances": ["Mozilla/5.0 (compatible) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36 collection@infegy.com"],
+    "addition_date": "2016/01/03"
+ },
+ {
+    "pattern": "IstellaBot",
+    "url": "http://www.tiscali.it/",
+    "instances": ["Mozilla/5.0 (compatible; IstellaBot/1.23.15 +http://www.tiscali.it/)"],
+    "addition_date": "2016/01/09"
+ },
+  {
+    "pattern": "DeuSu\\/",
+    "addition_date": "2016/01/23",
+    "url": "https://deusu.de/robot.html"
+  },
+  {
+    "pattern": "betaBot",
+    "addition_date": "2016/01/23"
+  },
+  {
+    "pattern": "Cliqzbot\\/",
+    "addition_date": "2016/01/23",
+    "url": "http://cliqz.com/company/cliqzbot"
+  },
+  {
+    "pattern": "MojeekBot\\/",
+    "addition_date": "2016/01/23",
+    "url": "https://www.mojeek.com/bot.html"
+  },
+  {
+    "pattern": "netEstate NE Crawler",
+    "addition_date": "2016/01/23",
+    "url": "+http://www.website-datenbank.de/"
+  },
+  {
+    "pattern": "SafeSearch microdata crawler",
+    "addition_date": "2016/01/23",
+    "url": "https://safesearch.avira.com"
+  },
+  {
+    "pattern": "Gluten Free Crawler\\/",
+    "addition_date": "2016/01/23",
+    "url": "http://glutenfreepleasure.com/"
+  },
+  {
+    "pattern": "Sonic",
+    "addition_date": "2016/02/08",
+    "url": "http://www.yama.info.waseda.ac.jp/~crawler/info.html"
+  },
+  {
+    "pattern": "Sysomos",
+    "addition_date": "2016/02/08",
+    "url": "http://www.sysomos.com"
+  },
+  {
+    "pattern": "Trove",
+    "addition_date": "2016/02/08",
+    "url": "http://www.trove.com"
+  },
+  {
+    "pattern": "deadlinkchecker",
+    "addition_date": "2016/02/08",
+    "url": "http://www.deadlinkchecker.com"
+  },
+  {
+    "pattern": "Slack-ImgProxy",
+    "addition_date": "2016/04/25",
+    "url": "https://api.slack.com/robots"
+  },
+  {
+    "pattern": "Embedly",
+    "addition_date": "2016/04/25",
+    "url": "http://support.embed.ly"
+  }
 ]
