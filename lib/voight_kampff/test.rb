@@ -1,6 +1,6 @@
 module VoightKampff
   class Test
-    CRAWLERS_FILENAME = 'crawler-user-agents.json'
+    CRAWLERS_FILENAME = 'crawler-user-agents.json'.freeze
 
     attr_accessor :user_agent_string
 
@@ -25,15 +25,14 @@ module VoightKampff
 
     def lookup_paths
       # These paths should be orderd by priority
-      base_paths = []
+      base_paths = [VoightKampff.root]
       base_paths << Rails.root if defined? Rails
-      base_paths << VoightKampff.root
 
       base_paths.map { |p| p.join('config', CRAWLERS_FILENAME) }
     end
 
-    def preferred_path
-      lookup_paths.find { |path| File.exists? path }
+    def preferred_paths
+      lookup_paths.select { |path| File.file? path }
     end
 
     def matching_crawler
@@ -54,7 +53,9 @@ module VoightKampff
     end
 
     def crawlers
-      @@crawlers ||= JSON.load(File.open(preferred_path, 'r'))
+      @@crawlers ||= preferred_paths.reduce([]) do |paths, path|
+        paths.concat(JSON.load(File.open(path, 'r')))
+      end
     end
   end
 end
