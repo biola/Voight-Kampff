@@ -9,6 +9,6 @@ namespace :voight_kampff do
     contents = Net::HTTP.get(uri)
 
     file = File.open('./config/crawler-user-agents.json', 'w')
-    file.write(contents)
+    file.write(contents.force_encoding(Encoding::UTF_8))
   end
 end
