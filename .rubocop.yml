@@ -1,0 +1,13 @@
+AllCops:
+  TargetRubyVersion: 2.4
+
+Layout/MultilineMethodCallIndentation:
+   EnforcedStyle: indented
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Metrics/LineLength:
+  Exclude:
+    - spec/support/*

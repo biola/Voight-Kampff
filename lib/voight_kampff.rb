@@ -1,17 +1,12 @@
-require 'json'
+# frozen_string_literal: true
 
 require 'voight_kampff/test'
 require 'voight_kampff/methods'
-require 'voight_kampff/rack_request' if defined?(Rack::Request)
 require 'voight_kampff/engine' if defined?(Rails)
 
+# Class helper methods
 module VoightKampff
   class << self
-    def root
-      require 'pathname'
-      Pathname.new File.expand_path '..', File.dirname(__FILE__)
-    end
-
     def human?(user_agent_string)
       test(user_agent_string).human?
     end
@@ -19,7 +14,7 @@ module VoightKampff
     def bot?(user_agent_string)
       test(user_agent_string).bot?
     end
-    alias :replicant? :bot?
+    alias replicant? bot?
 
     private
 
