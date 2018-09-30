@@ -8,7 +8,11 @@ namespace :voight_kampff do
     uri = URI(args[:url])
     contents = Net::HTTP.get(uri)
 
-    file = File.open('./config/crawler-user-agents.json', 'w')
-    file.write(contents)
+    if contents.present?
+      file = File.open('./config/crawler-user-agents.json', 'w')
+      file.write(contents.force_encoding(Encoding::UTF_8))
+    else
+      puts "voight_kampff:import_user_agents - empty file received from #{uri}"
+    end
   end
 end
