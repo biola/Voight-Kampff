@@ -1,7 +1,8 @@
 language: ruby
 rvm:
-  - 2.2.5
-  - 2.3.1
+  - 2.4.6
+  - 2.5.5
+  - 2.6.2
 script: bundle exec rspec
 before_install:
   # fixes Travis CI error: NoMethodError: undefined method `spec' for nil:NilClass
