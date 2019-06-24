@@ -30,7 +30,11 @@ describe VoightKampff::Test do
     before { VoightKampff::Test.new('anything').bot? }
 
     it 'is fast' do
-      expect(Benchmark.realtime { 20.times { VoightKampff::Test.new('anything').bot? } }).to be < 0.002
+      expect(
+        Benchmark.realtime do
+          20.times { VoightKampff::Test.new('anything').bot? }
+        end
+      ).to be < 0.003
     end
   end
 end
