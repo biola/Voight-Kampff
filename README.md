@@ -65,8 +65,8 @@ Also, you have to explicitly require `voight_kampff/rack_request` for `Rack::Req
 
 FAQ
 ---
-__Q:__ __What's with the name?__
-__A:__ It's the [machine in Blade Runner](http://en.wikipedia.org/wiki/Blade_Runner#Voight-Kampff_machine) that is used to test whether someone is a human or a replicant.
+__Q:__ __What's with the name?__  
+__A:__ It's the [machine in Blade Runner](https://en.wikipedia.org/wiki/Blade_Runner#Voight-Kampff_machine) that is used to test whether someone is a human or a replicant.
 
 __Q:__ __I've found a bot that isn't being matched__
 __A:__ The list is being pulled from [github.com/monperrus/crawler-user-agents](https://github.com/monperrus/crawler-user-agents).
