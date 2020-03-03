@@ -3,7 +3,7 @@ require 'json'
 require 'voight_kampff/test'
 require 'voight_kampff/methods'
 require 'voight_kampff/rack_request' if defined?(Rack::Request)
-require 'voight_kampff/engine' if defined?(Rails)
+require 'voight_kampff/engine' if defined?(Rails::Engine)
 
 module VoightKampff
   class << self
