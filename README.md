@@ -8,7 +8,20 @@ Voight-Kampff relies on a [user agent](http://en.wikipedia.org/wiki/User_agent) 
 
 Installation
 ------------
+
 `gem install voight_kampff`
+
+If you're using Rails and want to add `ActionDispatch::Request#bot?` and `ActionDispatch::Request#human?` methods, require `voight_kampff/rails`:
+
+```Gemfile
+gem 'voight_kampff', require: 'voight_kampff/rails'
+```
+
+if you're using pure Rack, require it the following way:
+
+```Gemfile
+gem 'voight_kampff', require: 'voight_kampff/rack'
+```
 
 Configuration
 -------------
