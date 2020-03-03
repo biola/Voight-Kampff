@@ -62,6 +62,23 @@ In general the `#bot?` command tends to include all of these and I'm sure it's u
 
 Also, the gem no longer extends `ActionDispatch::Request` instead it extends `Rack::Request` which `ActionDispatch::Request` inherits from. This allows the same functionality for Rails while opening the gem up to other rack-based projects.
 
+Upgrading to version 2.0
+------------------------
+
+If you use Rails and `ActionDispatch::Request#bot?` and `ActionDispatch::Request#human?` methods, change your gemfile:
+
+```diff
+-gem 'voight_kampff'
++gem 'voight_kampff', require: 'voight_kampff/rails'
+```
+
+If you use Rack, change your gemfile:
+
+```diff
+-gem 'voight_kampff'
++gem 'voight_kampff', require: 'voight_kampff/rack'
+```
+
 FAQ
 ---
 __Q:__ __What's with the name?__  
