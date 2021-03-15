@@ -1,4 +1,5 @@
 require 'json'
+require 'pathname'
 
 require 'voight_kampff/test'
 require 'voight_kampff/methods'
@@ -8,8 +9,15 @@ require 'voight_kampff/engine' if defined?(Rails::Engine)
 module VoightKampff
   class << self
     def root
-      require 'pathname'
       Pathname.new File.expand_path '..', File.dirname(__FILE__)
+    end
+
+    def custom_root
+      Pathname.new custom_root_path
+    end
+
+    def custom_root?
+      !custom_root_path.nil?
     end
 
     def human?(user_agent_string)
@@ -22,6 +30,10 @@ module VoightKampff
     alias :replicant? :bot?
 
     private
+
+    def custom_root_path
+      ENV['VOIGHT_KAMPFF_ROOT']
+    end
 
     def test(user_agent_string)
       VoightKampff::Test.new(user_agent_string)
