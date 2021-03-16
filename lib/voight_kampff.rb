@@ -24,8 +24,8 @@ module VoightKampff
       test(user_agent_string).human?
     end
 
-    def bot?(user_agent_string)
-      test(user_agent_string).bot?
+    def bot?(user_agent_string, type = nil)
+      test(user_agent_string).bot?(type)
     end
     alias :replicant? :bot?
 
