@@ -1,5 +1,3 @@
-require 'byebug'
-
 module VoightKampff
   class Test
     CRAWLERS_FILENAME = 'crawler-user-agents.json'
@@ -18,8 +16,12 @@ module VoightKampff
       agent.empty?
     end
 
-    def bot?
-      !human?
+    def bot?(type = nil)
+      if !human?
+        type.nil? || @agent["types"].include?(type.to_s)
+      else
+        false
+      end
     end
     alias :replicant? :bot?
 
@@ -31,7 +33,6 @@ module VoightKampff
       base_paths << VoightKampff.custom_root if VoightKampff.custom_root?
       base_paths << Rails.root if defined? Rails
       base_paths << VoightKampff.root
-      byebug
       base_paths.map { |p| p.join('config', CRAWLERS_FILENAME) }
     end
 

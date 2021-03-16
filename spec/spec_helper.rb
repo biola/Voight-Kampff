@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'combustion'
 require 'voight_kampff'
+require 'byebug'
 
 Combustion.initialize! :action_controller
 

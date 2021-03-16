@@ -1,6 +1,15 @@
 require 'spec_helper'
 
 describe VoightKampff::Test do
+  before(:each) do
+    VoightKampff::Test.class_variable_set :@@crawler_regexp, nil
+    VoightKampff::Test.class_variable_set :@@crawlers, nil
+  end
+
+  after(:each) do
+    VoightKampff::Test.class_variable_set :@@crawler_regexp, nil
+    VoightKampff::Test.class_variable_set :@@crawlers, nil
+  end
 
   context 'with default patterns loaded' do
     let(:user_agent_string) { nil }
@@ -13,6 +22,7 @@ describe VoightKampff::Test do
         it 'is not a replicant' do
           expect(subject.human?).to be true
           expect(subject.bot?).to be false
+          expect(subject.bot?(:bad)).to be false
         end
       end
     end
@@ -23,6 +33,7 @@ describe VoightKampff::Test do
 
         it 'is a replicant' do
           expect(subject.bot?).to be true
+          expect(subject.bot?(:bad)).to be true
           expect(subject.human?).to be false
         end
       end
@@ -36,7 +47,7 @@ describe VoightKampff::Test do
           Benchmark.realtime do
             20.times { VoightKampff::Test.new('anything').bot? }
           end
-        ).to be < 0.003
+        ).to be < 0.004
       end
     end
   end
@@ -51,6 +62,7 @@ describe VoightKampff::Test do
       allow(ENV).to receive(:[]).with('VOIGHT_KAMPFF_ROOT').and_return(current_directory)
     end
 
+
     let(:user_agent_string) { nil }
     subject { VoightKampff::Test.new(user_agent_string) }
 
@@ -64,7 +76,7 @@ describe VoightKampff::Test do
     end
 
     context 'using user agent not described by custom patterns' do
-      let(:user_agent_string) { 
+      let(:user_agent_string) {
         'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)'
       }
 
