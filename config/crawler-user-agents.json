@@ -12,6 +12,7 @@
       "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
       "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -23,6 +24,7 @@
       "Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)",
       "SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -30,6 +32,7 @@
     "instances": [
       "Googlebot-Image/1.0"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -37,6 +40,7 @@
     "instances": [
       "Googlebot-News"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -44,6 +48,7 @@
     "instances": [
       "Googlebot-Video/1.0"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -52,6 +57,7 @@
     "instances": [
       "AdsBot-Google (+http://www.google.com/adsbot.html)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -63,6 +69,7 @@
       "Mozilla/5.0 (Linux; Android 5.0; SM-G920A) AppleWebKit (KHTML, like Gecko) Chrome Mobile Safari (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)",
       "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -72,6 +79,7 @@
     "instances": [
       "Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 1 subscribers; feed-id=728742641706423)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -83,6 +91,7 @@
       "Mozilla/5.0 (iPhone; U; CPU iPhone OS 10_0 like Mac OS X; en-us) AppleWebKit/602.1.38 (KHTML, like Gecko) Version/10.0 Mobile/14A5297c Safari/602.1 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)",
       "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6531.22.7 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -90,6 +99,7 @@
     "addition_date": "2017/08/08",
     "url": "https://support.google.com/webmasters/answer/1061943?hl=en",
     "instances": []
+    , "types": ["bad"]
   }
   ,
   {
@@ -117,8 +127,10 @@
       "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53 (compatible; bingbot/2.0;  http://www.bing.com/bingbot.htm)",
       "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)",
       "Mozilla/5.0 (seoanalyzer; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)",
-      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Safari/537.36"
+      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Safari/537.36",
+      "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -129,6 +141,7 @@
       "Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)",
       "Mozilla/5.0 (compatible; Yahoo! Slurp China; http://misc.yahoo.com.cn/help.html)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -147,6 +160,7 @@
       "LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta Commons-HttpClient/4.3 +http://www.linkedin.com)",
       "LinkedInBot/1.0 (compatible; Mozilla/5.0; Apache-HttpClient +http://www.linkedin.com)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -224,6 +238,7 @@
       "NutchCVS/0.7.1 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)",
       "istellabot-nutch/Nutch-1.10"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -604,6 +619,7 @@
       "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B411 Safari/600.1.4 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2015/04/14"
+    , "types": ["bad"]
   }
   ,
   {
@@ -613,6 +629,7 @@
       "Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2015/04/14"
+    , "types": ["bad"]
   }
   ,
   {
@@ -622,6 +639,7 @@
       "Mozilla/5.0 (compatible; YandexAccessibilityBot/3.0; +http://yandex.com/bots"
     ],
     "addition_date": "2019/03/01"
+    , "types": ["bad"]
   }
   ,
   {
@@ -631,6 +649,7 @@
       "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B411 Safari/600.1.4 (compatible; YandexMobileBot/3.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2016/12/01"
+    , "types": ["bad"]
   }
   ,
   {
@@ -643,6 +662,7 @@
       "Mozilla/5.0 (compatible; YandexMetrika/4.0; +http://yandex.com/bots)"
     ],
     "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.xml#robot-in-logs"
+    , "types": ["bad"]
   }
   ,
   {
@@ -652,6 +672,7 @@
       "Mozilla/5.0 (compatible; YandexTurbo/1.0; +http://yandex.com/bots)"
     ],
     "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.xml#robot-in-logs"
+    , "types": ["bad"]
   }
   ,
   {
@@ -661,6 +682,7 @@
       "Mozilla/5.0 (compatible; YandexImageResizer/2.0; +http://yandex.com/bots)"
     ],
     "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.xml#robot-in-logs"
+    , "types": ["bad"]
   }
   ,
   {
@@ -671,6 +693,7 @@
       "Mozilla/5.0 (compatible; YandexVideo/3.0; +http://yandex.com/bots)"
     ],
     "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.xml#robot-in-logs"
+    , "types": ["bad"]
   }
   ,
   {
@@ -680,6 +703,7 @@
       "Mozilla/5.0 (compatible; YandexAdNet/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -689,6 +713,7 @@
       "Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -698,6 +723,7 @@
       "Mozilla/5.0 (compatible; YandexCalendar/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -708,6 +734,7 @@
       "Mozilla/5.0 (compatible; YandexDirectDyn/1.0; +http://yandex.com/bots"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -717,6 +744,7 @@
       "Mozilla/5.0 (compatible; YandexFavicons/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -726,6 +754,7 @@
       "Mozilla/5.0 (compatible; YaDirectFetcher/1.0; Dyatel; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -735,6 +764,7 @@
       "Mozilla/5.0 (compatible; YandexForDomain/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -745,6 +775,7 @@
       "Mozilla/5.0 (compatible; YandexMarket/2.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -754,6 +785,7 @@
       "Mozilla/5.0 (compatible; YandexMedia/3.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -763,6 +795,7 @@
       "Mozilla/5.0 (compatible; YandexMobileScreenShotBot/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -772,6 +805,7 @@
       "Mozilla/5.0 (compatible; YandexNews/4.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -791,6 +825,7 @@
       "Mozilla/5.0 (compatible; YandexPagechecker/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -800,6 +835,7 @@
       "Mozilla/5.0 (compatible; YandexPartner/3.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -809,6 +845,7 @@
       "Mozilla/5.0 (compatible; YandexRCA/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -818,6 +855,7 @@
       "Mozilla/5.0 (compatible; YandexSearchShop/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -827,6 +865,7 @@
       "Mozilla/5.0 (compatible; YandexSitelinks; Dyatel; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -836,6 +875,7 @@
       "Mozilla/5.0 (compatible; YandexSpravBot/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -845,6 +885,7 @@
       "Mozilla/5.0 (compatible; YandexTracker/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -854,6 +895,7 @@
       "Mozilla/5.0 (compatible; YandexVertis/3.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -863,6 +905,7 @@
       "Mozilla/5.0 (compatible; YandexVerticals/1.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -872,6 +915,7 @@
       "Mozilla/5.0 (compatible; YandexWebmaster/2.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -881,6 +925,7 @@
       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36 (compatible; YandexScreenshotBot/3.0; +http://yandex.com/bots)"
     ],
     "addition_date": "2020/11/30"
+    , "types": ["bad"]
   }
   ,
   {
@@ -1063,6 +1108,7 @@
       "Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)",
       "dotbot"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -1115,6 +1161,7 @@
       "Mozilla/5.0 (compatible; heritrix/3.3.0-SNAPSHOT-20160309-0050; UniLeipzigASV +http://corpora.informatik.uni-leipzig.de/crawler_faq.html)",
       "Mozilla/5.0 (compatible; sukibot_heritrix/3.1.1 +http://suki.ling.helsinki.fi/eng/webmasters.html)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -1365,6 +1412,7 @@
       "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
     ],
     "url": "https://developers.facebook.com/docs/sharing/webmasters/crawler/"
+    , "types": ["bad"]
   }
   ,
   {
@@ -1374,6 +1422,7 @@
     "instances": [
       "Mozilla/5.0 (compatible; Yeti/1.1; +http://naver.me/bot)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -1399,6 +1448,7 @@
       "Sogou Pic Spider/3.0(+http://www.sogou.com/docs/help/webmasters.htm#07)",
       "Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -1464,6 +1514,7 @@
       "Mozilla/5.0 (compatible; DuckDuckBot-Https/1.1; https://duckduckgo.com/duckduckbot)",
       "'Mozilla/5.0 (compatible; DuckDuckBot-Https/1.1; https://duckduckgo.com/duckduckbot)'"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -1654,6 +1705,7 @@
       "rogerbot/1.1 (http://moz.com/help/guides/search-overview/crawl-diagnostics#more-help, rogerbot-crawler+pr4-crawler-15@moz.com)",
       "rogerbot/1.2 (http://moz.com/help/pro/what-is-rogerbot-, rogerbot-crawler+phaser-testing-crawler-01@moz.com)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -1768,6 +1820,7 @@
       "Twitterbot/0.1",
       "Twitterbot/1.0"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -1863,6 +1916,7 @@
       "Mozilla/5.0 (compatible; MegaIndex.ru/2.0; +http://megaindex.com/crawler)"
     ],
     "addition_date": "2015/03/28"
+    , "types": ["bad"]
   }
   ,
   {
@@ -1936,6 +1990,7 @@
       "Mozilla/5.0 (compatible; special_archiver/3.1.1 +http://www.archive.org/details/archive.org_bot)"
     ],
     "addition_date": "2015/04/14"
+    , "types": ["bad"]
   }
   ,
   {
@@ -1947,8 +2002,10 @@
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebot/0.1; +http://www.apple.com/go/applebot)",
       "Mozilla/5.0 (compatible; Applebot/0.3; +http://www.apple.com/go/applebot)",
       "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Applebot/0.3; +http://www.apple.com/go/applebot)",
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B410 Safari/600.1.4 (Applebot/0.1; +http://www.apple.com/go/applebot)"
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B410 Safari/600.1.4 (Applebot/0.1; +http://www.apple.com/go/applebot)",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15 (Applebot/0.1; +http://www.apple.com/go/applebot)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2054,6 +2111,7 @@
       "Screaming Frog SEO Spider/5.1"
     ],
     "addition_date": "2016/01/08"
+    , "types": ["bad"]
   }
   ,
   {
@@ -2307,6 +2365,7 @@
       "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)",
       "Slackbot 1.0 (+https://api.slack.com/robots)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2376,6 +2435,7 @@
       "WhatsApp/2.19.308 A",
       "WhatsApp/2.19.330 A"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2394,6 +2454,7 @@
       "Pinterest/0.2 (+http://www.pinterest.com/bot.html)"
     ],
     "url": "http://www.pinterest.com/bot.html"
+    , "types": ["bad"]
   }
   ,
   {
@@ -2423,8 +2484,10 @@
       "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0; BingPreview/1.0b) like Gecko",
       "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0;  WOW64;  Trident/6.0;  BingPreview/1.0b)",
       "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;  WOW64;  Trident/5.0;  BingPreview/1.0b)",
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53 BingPreview/1.0b"
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53 BingPreview/1.0b",
+      "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) BingPreview/1.0b"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2545,6 +2608,7 @@
       "Mozilla/5.0 (compatible; pingbot/2.0; +http://www.pingdom.com/)"
     ],
     "url": "http://www.pingdom.com"
+    , "types": ["bad"]
   }
   ,
   {
@@ -2638,6 +2702,7 @@
       "BarkRowler/0.7 (+http://www.exensa.com/crawling)",
       "Barkrowler/0.9 (+http://www.exensa.com/crawl)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2746,8 +2811,8 @@
     "instances": [
       "Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/20023257-what-is-paper-li)",
       "Mozilla/5.0 (compatible; PaperLiBot/2.1; https://support.paper.li/entries/20023257-what-is-paper-li)"
-
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2871,6 +2936,7 @@
     "instances": [
       "omgili/0.5 +http://omgili.com"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2897,6 +2963,7 @@
     "instances": [
       "Mozilla/5.0 (compatible; um-LN/1.0; mailto: techinfo@ubermetrics-technologies.com)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2915,6 +2982,7 @@
     "instances": [
       "Mozilla/5.0 (compatible; MuckRack/1.0; +http://muckrack.com)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2932,6 +3000,7 @@
     "instances": [
       "AHC/2.0"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -2978,6 +3047,7 @@
       "AppEngine-Google; (+http://code.google.com/appengine; appid: example)",
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36 AppEngine-Google; (+http://code.google.com/appengine; appid: s~feedly-nikon3)"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -3121,6 +3191,7 @@
       "ICC-Crawler/2.0 (Mozilla-compatible; ; http://ucri.nict.go.jp/en/icccrawler.html)"
     ],
     "url": "http://ucri.nict.go.jp/en/icccrawler.html"
+    , "types": ["bad"]
   }
   ,
   {
@@ -3156,6 +3227,7 @@
     "instances": [
       "BLP_bbot/0.1"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -3201,6 +3273,7 @@
       "magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)"
     ],
     "url": "http://www.brandwatch.net"
+    , "types": ["bad"]
   }
   ,
   {
@@ -3219,6 +3292,7 @@
       "Mozilla/5.0 Moreover/5.1 (+http://www.moreover.com)"
     ],
     "url": "http://www.moreover.com"
+    , "types": ["bad"]
   }
   ,
   {
@@ -3266,6 +3340,7 @@
       "Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)"
     ],
     "url": "http://www.uptimerobot.com/"
+    , "types": ["bad"]
   }
   ,
   {
@@ -3606,6 +3681,7 @@
       "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) SiteCheck-sitecrawl by Siteimprove.com",
       "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.0) LinkCheck by Siteimprove.com"
     ]
+    , "types": ["bad"]
   }
   ,
   {
@@ -3615,6 +3691,7 @@
        "Mozilla/5.0 (compatible; BLEXBot/1.0; +http://webmeup-crawler.com/)"
      ],
      "url": "http://webmeup-crawler.com"
+    , "types": ["bad"]
   }
   ,
   {
@@ -3676,9 +3753,11 @@
      "pattern": "SEOkicks",
      "addition_date": "2018/08/22",
      "instances": [
+       "Mozilla/5.0 (compatible; SEOkicks; +https://www.seokicks.de/robot.html)",
        "Mozilla/5.0 (compatible; SEOkicks; +https://www.seokicks.de/robot.html)"
      ],
      "url": "https://www.seokicks.de/robot.html"
+    , "types": ["bad"]
   }
   ,
   {
@@ -3756,6 +3835,7 @@
       "google-xrawler"
     ],
     "url": "https://webmasters.stackexchange.com/questions/105560/what-is-the-google-xrawler-user-agent-used-for"
+    , "types": ["bad"]
   }
   ,
   {
@@ -4529,6 +4609,7 @@
       "NAVER Blog Rssbot"
     ],
     "url": "http://www.naver.com"
+    , "types": ["bad"]
   },
   {
     "pattern": "zenback bot",
@@ -4811,5 +4892,10 @@
     "instances": [
       "Google-Certificates-Bridge"
     ]
+  },
+  {
+    "pattern": "comscore.com/Web-Crawler",
+    "addition_date": "2021/03/15",
+    "types": ["bad"]
   }
 ]
