@@ -73,6 +73,15 @@ In general the `#bot?` command tends to include all of these and I'm sure it's u
 
 Also, the gem no longer extends `ActionDispatch::Request` instead it extends `Rack::Request` which `ActionDispatch::Request` inherits from. This allows the same functionality for Rails while opening the gem up to other rack-based projects.
 
+Publishing gem
+--------------
+
+* Make sure that you have the `ruby-local` gem source configured: `gem source -a
+  https://<USERNAME>:<PASSWORD>@repo.socrata.com/artifactory/api/gems/ruby-local/`
+* Build the gem: `gem build voight_kampff.gemspec`
+* Publish the gem: gem push <PACKAGE> --host
+  `https://repo.socrata.com/artifactory/api/gems/ruby-local`
+
 FAQ
 ---
 __Q:__ __What's with the name?__  
