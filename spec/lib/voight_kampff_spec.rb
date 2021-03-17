@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe VoightKampff do
   subject { VoightKampff }
 
-  HUMANS.each do |name, ua_string|
+  HUMANS.each do |_name, ua_string|
     context "when user agent is #{ua_string}" do
       let(:user_agent_string) { ua_string }
 
@@ -14,7 +16,7 @@ describe VoightKampff do
     end
   end
 
-  REPLICANTS.each do |name, ua_string|
+  REPLICANTS.each do |_name, ua_string|
     context "when user agent is #{ua_string}" do
       let(:user_agent_string) { ua_string }
 

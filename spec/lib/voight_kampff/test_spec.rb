@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe VoightKampff::Test do
@@ -27,14 +29,22 @@ describe VoightKampff::Test do
   end
 
   context 'after the first run' do
-    before { VoightKampff::Test.new('anything').bot? }
+    def time_of_run
+      Benchmark.realtime { VoightKampff::Test.new('anything').bot? }
+    end
 
-    it 'is fast' do
-      expect(
-        Benchmark.realtime do
-          20.times { VoightKampff::Test.new('anything').bot? }
-        end
-      ).to be < 0.003
+    before do
+      VoightKampff::Test.instance_variable_set(:@crawler_regexp, nil)
+    end
+
+    let(:number_of_runs) { 20 }
+
+    times_faster = 2
+
+    it "is at least #{times_faster} times faster" do
+      expect(time_of_run / times_faster).to be > (
+        (1..number_of_runs).map { time_of_run }.sum / number_of_runs
+      )
     end
   end
 end

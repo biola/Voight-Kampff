@@ -15,7 +15,7 @@ Configuration
 
 A JSON file is used to match [user agent strings](http://simplyfast.info/browser) to a list of known bots.
 
-If you'd like to use an [updated list](https://github.com/monperrus/crawler-user-agents) or make your own customizations, run `rake voight_kampff:import_user_agents`. This will download a `crawler-user-agents.json` file into the `./config` directory.
+If you'd like to use an [updated list](https://github.com/monperrus/crawler-user-agents) or make your own customizations, run `rake voight_kampff:import_user_agents`. This will download a `crawler-user-agents.json` file into the `./tmp` directory.
 
 __Note:__ The pattern entries in the JSON file are evaluated as [regular expressions](http://en.wikipedia.org/wiki/Regular_expression).
 
@@ -23,21 +23,24 @@ Usage
 -----
 There are three ways to use Voight-Kampff
 
-1. Through Rack::Request such as in your [Ruby on Rails](http://rubyonrails.org) controllers:  
-   `request.bot?`
+1. Through `Rack::Request` in your app such as [Ruby on Rails](http://rubyonrails.org):
+   ```ruby
+   request.bot?
+   ```
 
-2. Through the `VoightKampff` module:  
+2. Through the `VoightKampff` module:
    `VoightKampff.bot? 'your user agent string'`
 
-3. Through a `VoightKampff::Test` instance:  
+3. Through a `VoightKampff::Test` instance:
    `VoightKampff::Test.new('your user agent string').bot?`
 
-All of the above examples accept `human?` and `bot?` methods. All of these methods will return `true` or `false`.
+All of the above examples accept `human?` and `bot?` methods.
+All of these methods will return `true` or `false`.
 
 Upgrading to version 1.0
 ------------------------
 
-Version 1.0 uses a new source for a list of bot user agent strings since the old source was no longer maintained. This new source, unfortuately, does not include as much detail. Therefore the following methods have been deprecated:
+Version 1.0 uses a new source for a list of bot user agent strings since the old source was no longer maintained. This new source, unfortunately, does not include as much detail. Therefore the following methods have been deprecated:
 - `#browser?`
 - `#checker?`
 - `#downloader?`
@@ -51,10 +54,10 @@ Also, the gem no longer extends `ActionDispatch::Request` instead it extends `Ra
 
 FAQ
 ---
-__Q:__ __What's with the name?__  
+__Q:__ __What's with the name?__
 __A:__ It's the [machine in Blade Runner](https://en.wikipedia.org/wiki/Blade_Runner#Voight-Kampff_machine) that is used to test whether someone is a human or a replicant.
 
-__Q:__ __I've found a bot that isn't being matched__  
+__Q:__ __I've found a bot that isn't being matched__
 __A:__ The list is being pulled from [github.com/monperrus/crawler-user-agents](https://github.com/monperrus/crawler-user-agents).
 If you'd  like to have entries added to the list, please create a pull request with that project. Once that pull request is merged, feel free to create an issue here and I'll release a new gem version with the updated list. In the meantime you can always run `rake voight_kampff:import_user_agents` on your project to get that updated list.
 
@@ -67,7 +70,7 @@ Thanks to [github.com/monperrus/crawler-user-agents](https://github.com/monperru
 
 Contributing
 ------------
-PR without tests will not get merged, Make sure you write tests for api and rails app.
+PR without tests will not get merged, Make sure you write tests for API and Rails app.
 Feel free to ask for help, if you do not know how to write a determined test.
 
 Running Tests?
