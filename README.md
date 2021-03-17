@@ -34,6 +34,30 @@ There are three ways to use Voight-Kampff
 
 All of the above examples accept `human?` and `bot?` methods. All of these methods will return `true` or `false`.
 
+Types
+-----
+
+We needed a way to categorize our bots so we added another level of granularity
+to bot differentations by allowing you to add a list of `types` to each bot definition in
+`config/crawler-user-agents.json`. You can add additional definitions by forking
+the repo or specifying your own custom crawler-user-agents.json file. This
+library is customized to give some bots a `bad` designation which is an internal
+differentation we made between various bots. You can use that one or add your
+own.
+
+To query these designations, you can call `bot?(:bad)` in any of the various
+forms already described above and it will return if the user agent is a bot that
+you have designated `bad`.
+
+Specifying A Custom List of Bot Regexes
+---------------------------------------
+
+* Create a `config` directory somewhere in your software project
+* Copy the existing `crawler-user-agents.json` or start fresh and customize at
+  will
+* Set the environment variable `VOIGHT_KAMPFF_ROOT` to the folder you placed the
+  `config` directory in
+
 Upgrading to version 1.0
 ------------------------
 
