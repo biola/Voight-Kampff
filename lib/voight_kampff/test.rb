@@ -45,7 +45,11 @@ module VoightKampff
 
     def matching_crawler
       if match = crawler_regexp.match(@user_agent_string)
-        index = match.named_captures.compact.first[0].sub(/match/, '').to_i
+        all_capture_groups = match.named_captures
+        without_nil_entries = all_capture_groups.compact
+        first_matching_group = without_nil_entries.first
+        group_name = first_matching_group[0]
+        index = group_name.sub(/match/, '').to_i
         crawlers[index]
       end
     end
