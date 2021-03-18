@@ -20,7 +20,7 @@ describe Rack::Request do
     end
   end
 
-  REPLICANTS.each do |name, ua_string|
+  BAD_REPLICANTS.each do |name, ua_string|
     context "when user agent is #{name}" do
       let(:user_agent_string) { ua_string }
 
@@ -30,4 +30,16 @@ describe Rack::Request do
       end
     end
   end
+
+  GOOD_REPLICANTS.each do |name, ua_string|
+    context "when user agent is #{name}" do
+      let(:user_agent_string) { ua_string }
+
+      it 'is a replicant' do
+        expect(subject.bot?).to eql true
+        expect(subject.human?).to eql false
+      end
+    end
+  end
+
 end
