@@ -27,13 +27,25 @@ describe VoightKampff::Test do
       end
     end
 
-    REPLICANTS.each do |name, ua_string|
+    BAD_REPLICANTS.each do |name, ua_string|
       context "when user agent is #{name}" do
         let(:user_agent_string) { ua_string }
 
-        it 'is a replicant' do
+        it 'is a bad replicant' do
           expect(subject.bot?).to be true
           expect(subject.bot?(:bad)).to be true
+          expect(subject.human?).to be false
+        end
+      end
+    end
+
+    GOOD_REPLICANTS.each do |name, ua_string|
+      context "when user agent is #{name}" do
+        let(:user_agent_string) { ua_string }
+
+        it 'is a good replicant' do
+          expect(subject.bot?).to be true
+          expect(subject.bot?(:bad)).to be false
           expect(subject.human?).to be false
         end
       end

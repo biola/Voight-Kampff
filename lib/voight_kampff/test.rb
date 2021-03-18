@@ -18,7 +18,10 @@ module VoightKampff
 
     def bot?(type = nil)
       if !human?
-        type.nil? || @agent["types"].include?(type.to_s)
+        return true if type.nil?
+        return false if @agent["types"].nil?
+
+        @agent["types"].include?(type.to_s)
       else
         false
       end
@@ -42,7 +45,11 @@ module VoightKampff
 
     def matching_crawler
       if match = crawler_regexp.match(@user_agent_string)
-        index = match.names.first.sub(/match/, '').to_i
+        all_capture_groups = match.named_captures
+        without_nil_entries = all_capture_groups.compact
+        first_matching_group = without_nil_entries.first
+        group_name = first_matching_group[0]
+        index = group_name.sub(/match/, '').to_i
         crawlers[index]
       end
     end
