@@ -1,5 +1,12 @@
 [
   {
+    "pattern": "",
+    "instances": [],
+    "types": [
+      "bad"
+    ]
+  },
+  {
     "pattern": "Googlebot\\/",
     "url": "http://www.google.com/bot.html",
     "instances": [
