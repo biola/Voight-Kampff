@@ -33,7 +33,7 @@ module VoightKampff
     end
 
     def preferred_path
-      lookup_paths.find { |path| File.exists? path }
+      lookup_paths.find { |path| File.exist? path }
     end
 
     def matching_crawler
