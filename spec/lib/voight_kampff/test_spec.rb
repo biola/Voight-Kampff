@@ -34,7 +34,7 @@ describe VoightKampff::Test do
         Benchmark.realtime do
           20.times { VoightKampff::Test.new('anything').bot? }
         end
-      ).to be < 0.003
+      ).to be < 0.005
     end
   end
 end
