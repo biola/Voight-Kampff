@@ -26,3 +26,6 @@ module VoightKampff
     end
   end
 end
+
+require 'voight_kampff/rack' if defined?(Rack)
+require 'voight_kampff/rails' if defined?(Rails::Railtie)
