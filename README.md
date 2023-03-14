@@ -36,16 +36,20 @@ Usage
 -----
 There are three ways to use Voight-Kampff
 
-1. Through `Rack::Request` in your app such as [Ruby on Rails](http://rubyonrails.org):
-   ```ruby
-   request.bot?
-   ```
+1.  Through `Rack::Request` in your app such as [Ruby on Rails](http://rubyonrails.org):
+    ```ruby
+    request.bot?
+    ```
 
 2. Through the `VoightKampff` module:
-   `VoightKampff.bot? 'your user agent string'`
+    ```ruby
+    VoightKampff.bot? 'your user agent string'
+    ```
 
-3. Through a `VoightKampff::Test` instance:
-   `VoightKampff::Test.new('your user agent string').bot?`
+3.  Through a `VoightKampff::Test` instance:
+    ```ruby
+    VoightKampff::Test.new('your user agent string').bot?
+    ```
 
 All of the above examples accept `human?` and `bot?` methods.
 All of these methods will return `true` or `false`.
