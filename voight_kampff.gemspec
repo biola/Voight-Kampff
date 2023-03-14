@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'combustion', '~> 1.1'
   s.add_development_dependency 'pry-byebug', '~> 3.7'
   s.add_development_dependency 'rack', ['>= 1.4', '< 4.0']
-  s.add_development_dependency 'rails', '>= 5.2', '< 7'
-  s.add_development_dependency 'rspec-rails', '~> 5.0'
+  s.add_development_dependency 'rails', '>= 5.2', '< 8'
+  s.add_development_dependency 'rspec-rails', '~> 6.0'
   s.add_development_dependency 'rubocop', '~> 1.48.0'
 end
