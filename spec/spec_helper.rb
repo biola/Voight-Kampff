@@ -10,6 +10,3 @@ Combustion.initialize! :action_controller
 
 require 'rspec/rails'
 Dir['./spec/support/**/*.rb'].sort.each { |f| require f }
-
-RSpec.configure do |config|
-end
